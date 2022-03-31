@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container-fluid barmenu">
+        <ul class="row">
+            <a class="col-md-3 col-xd-12 logo" href="+" style="color:#fb911f;"><span>N</span>ebrata SARL</a>
+            <li class="col-md col-xs-12"> Acceuil</li>
+            <li class="col-md col-xs-12">Nos services</li>
+            <li class="col-md col-xd-12">Nos Réalisations</li>
+            <li class="col-md col-xd-12">Contact</li>
+        </ul>
+    </header>
+    <section class="container-fluid bannieresite" id="bannieresite">
+        <div class="contenu">
+          <h2>Votre Meilleur Partenaire<br>Pour Vos projets Digitaux</h2><br>
+          <p class="p11"> Le digital au coeur de votre stratégie de croissance</p>
+          <a href="#" class="bouton1">Voir Plus</a>
+      </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        const body=document.body;
+
+        setInterval(rainFall, 1000);
+
+        function rainFall(){
+            const waterDrop=document.createElement('i');
+
+            waterDrop.classList.add('fas');
+            waterDrop.classList.add('fa-tint');
+            waterDrop.style.fontSize= Math.random() * 7 + 'px';
+            waterDrop.style.animationDuration= Math.random() * 2 + 's';
+            waterDrop.style.opacity=Math.random() + 0.3;
+            waterDrop.style.left= Math.random() * window.innerWidth+'px';
+            body.appendChild(waterDrop);
+
+            setTimeout(() =>{
+                waterDrop.remove();
+            }, 6000)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.logo{
+    color: #fb911f;
+    font-weight:bold;
+    font-size:2em;
+    text-decoration: none;
+}
+.logo span{
+    color:#007FFF;
+    background:#ffff;
+    padding: 0px 10px 0px 10px;
+    border-radius: 25px;
+}
+.bannieresite{
+    position:relative;
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bgg.png);
+    background-size: cover;
+    z-index: 1;
+}
+.bannieresite.contenu{
+    text-align: center;  
+}
+.bannieresite .contenu{
+    color:#fff;
+    font-size:1.5em;
+    text-transform: capitalize; 
+    margin-right:500px;
+    margin-bottom:150px;
+}
+.contenu p:nth-child(2){
+    color:#fff;
+    font-size:1.1em;
+}
+.bouton1{
+    font-size: 1em;
+    color:#fff;
+    background:#fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform:uppercase;
+    text-decoration:none;
+    transition: 0.5s;
+}
+.barmenu{
+    background-color: #233DFF;
+    padding-bottom: 2px;
+}
+.barmenu ul li{
+    list-style: none;
+    color: #fff;
+    margin-top:25px;
+}
+.barmenu a{
+    margin-top:12px;
+}
+
+.fa-tint {
+    color:rgba(160, 160, 160, 160);
+    position: absolute;
+    top:-20px;
+    animation: fall linear forwards;
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+
+    }
+}
